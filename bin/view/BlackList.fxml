@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f4f1fd, #ebe2f9, #e4d3f5, #daafe6, #d789cf, #d65daf, #d31989);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BlackListController">
+   <children>
+      <ImageView fitHeight="74.0" fitWidth="308.0" layoutX="246.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/2%20(13).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="94.0" layoutX="563.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/list.png" />
+         </image>
+      </ImageView>
+      <TableView id="table1" fx:id="tablee" layoutX="20.0" layoutY="158.0" prefHeight="346.0" prefWidth="800.0" stylesheets="@../application/myCss.css">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="62.666666984558105" text="ID" />
+            <TableColumn fx:id="firstname" prefWidth="106.6666488647461" text="first Name" />
+            <TableColumn fx:id="lastname" prefWidth="92.66670227050781" text="last Name" />
+            <TableColumn fx:id="date" prefWidth="100.0" text="birthDate" />
+            <TableColumn fx:id="gender" prefWidth="77.33328247070312" text="Gender" />
+            <TableColumn fx:id="neighberhood" prefWidth="93.33328247070312" text="Expertise" />
+            <TableColumn fx:id="lac" prefWidth="135.33331298828125" text="SensitiveToLactose" />
+            <TableColumn fx:id="glu" minWidth="1.3333740234375" prefWidth="131.33331298828125" text="SensitiveToGluten" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

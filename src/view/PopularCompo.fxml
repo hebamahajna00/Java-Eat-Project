@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f4f1fd, #ebe2f9, #e4d3f5, #daafe6, #d789cf, #d65daf, #d31989);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PopularCompoController">
+   <children>
+      <TableView id="table1" fx:id="tablee" layoutX="140.0" layoutY="124.0" prefHeight="380.0" prefWidth="537.0" stylesheets="@../application/myCss.css">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="102.00001525878906" text="name" />
+            <TableColumn fx:id="lac" prefWidth="125.3333740234375" text="hasLactose" />
+            <TableColumn fx:id="price" prefWidth="117.33328247070312" text="Price" />
+            <TableColumn fx:id="glu" prefWidth="116.00006103515625" text="hasGluten" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="43.0" fitWidth="308.0" layoutX="238.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/2%20(7).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="94.0" layoutX="563.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/1486-food-as-resources-outline.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f3f1fd, #e9e2fa, #dfd3f6, #cdb1eb, #bf8edd, #b468cc, #ac3bb6);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UpdateDeliveryAreaController">
+   <children>
+      <Button fx:id="update" layoutX="85.0" layoutY="469.0" mnemonicParsing="false" onAction="#updatee" prefHeight="44.0" prefWidth="262.0" stylesheets="@../application/myCss.css" text="Update">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.780701756477356" green="0.42167532444000244" blue="0.7627504467964172" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.6000000238418579" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="areaName" layoutX="216.0" layoutY="193.0" onKeyPressed="#keyPressed" prefHeight="27.0" prefWidth="149.0" />
+      <Label layoutX="558.0" layoutY="239.0" text=" Add Neighberhoods:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4912280738353729" green="0.027290448546409607" blue="0.3211176097393036" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3333333432674408" green="0.015432098880410194" blue="0.21676954627037048" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ListView fx:id="neighberhoods" layoutX="697.0" layoutY="225.0" prefHeight="115.0" prefWidth="124.0" />
+      <Label layoutX="68.0" layoutY="202.0" text="Delivery Area Name:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.42105263471603394" green="0.014294996857643127" blue="0.271908164024353" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.09817351598173514">
+                     <color>
+                        <Color red="0.3799999952316284" green="0.01899999938905239" blue="0.271699994802475" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.38596490025520325" green="0.015486246906220913" blue="0.27482131123542786" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameError" layoutX="378.0" layoutY="188.0" prefHeight="37.0" prefWidth="289.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="548.0" layoutY="363.0" text=" remove Neighberhoods:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4912280738353729" green="0.027290448546409607" blue="0.3211176097393036" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3333333432674408" green="0.015432098880410194" blue="0.21676954627037048" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ListView fx:id="removee" layoutX="697.0" layoutY="355.0" prefHeight="103.0" prefWidth="124.0" />
+      <Label layoutX="54.0" layoutY="35.0" text="Update Delivery Area">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9385964870452881" green="0.017381416633725166" blue="0.6008176207542419" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4385964870452881" green="0.020305393263697624" blue="0.38979586958885193" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="65.0" layoutY="97.0" prefHeight="81.0" prefWidth="600.0" style="-fx-border-color: purple; -fx-border-radius: 2em;">
+         <children>
+            <Label layoutX="14.0" layoutY="27.0" text="Choose Area To update:" textFill="#65035b">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="compoo" layoutX="242.0" layoutY="23.0" onAction="#showInformation" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #B064B0;" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="65.0" layoutY="239.0" text=" Add Deliveries:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4912280738353729" green="0.027290448546409607" blue="0.3211176097393036" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3333333432674408" green="0.015432098880410194" blue="0.21676954627037048" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ListView fx:id="addDeli" layoutX="195.0" layoutY="233.0" prefHeight="115.0" prefWidth="124.0" />
+      <Label layoutX="65.0" layoutY="354.0" text="Remove Deliveries:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4912280738353729" green="0.027290448546409607" blue="0.3211176097393036" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3333333432674408" green="0.015432098880410194" blue="0.21676954627037048" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ListView fx:id="removeDeli" layoutX="195.0" layoutY="355.0" prefHeight="103.0" prefWidth="124.0" />
+      <Label layoutX="335.0" layoutY="239.0" text="add person">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4912280738353729" green="0.027290448546409607" blue="0.3211176097393036" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3333333432674408" green="0.015432098880410194" blue="0.21676954627037048" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="354.0" text="remove person">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4912280738353729" green="0.027290448546409607" blue="0.3211176097393036" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3333333432674408" green="0.015432098880410194" blue="0.21676954627037048" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ListView fx:id="addPerson" layoutX="415.0" layoutY="230.0" prefHeight="115.0" prefWidth="124.0" />
+      <ListView fx:id="removePerson" layoutX="415.0" layoutY="354.0" prefHeight="103.0" prefWidth="124.0" />
+   </children>
+</AnchorPane>

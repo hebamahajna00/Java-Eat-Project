@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f4f1fd, #ebe2f9, #e4d3f5, #daafe6, #d789cf, #d65daf, #d31989);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReleventDishCustomerController">
+   <children>
+      <TableView id="table1" fx:id="tablee" layoutX="72.0" layoutY="117.0" prefHeight="388.0" prefWidth="617.0" stylesheets="@../application/myCss.css">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="name" prefWidth="97.33334350585938" text="name" />
+            <TableColumn fx:id="type" prefWidth="89.33332824707031" text="Type" />
+            <TableColumn fx:id="components" prefWidth="110.0" text="Components" />
+            <TableColumn fx:id="price" prefWidth="90.00003051757812" text="Price" />
+            <TableColumn fx:id="time" prefWidth="154.00006103515625" text="Time To Make" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="74.0" fitWidth="308.0" layoutX="227.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/2%20(4).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="94.0" layoutX="563.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/order-completed.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

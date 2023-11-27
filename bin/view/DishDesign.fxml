@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f3f1fd, #e9e2fa, #dfd3f6, #cdb1eb, #bf8edd, #b468cc, #ac3bb6);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ManagerAddDishController">
+   <children>
+      <Button fx:id="addDish" layoutX="94.0" layoutY="447.0" mnemonicParsing="false" onAction="#add" prefHeight="37.0" prefWidth="236.0" stylesheets="@../application/myCss.css" text="ADD">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.780701756477356" green="0.42167532444000244" blue="0.7627504467964172" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.6000000238418579" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="85.0" layoutY="282.0" text="Components:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3070175349712372" green="0.047379251569509506" blue="0.21181683242321014" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7368420958518982" green="0.4366471767425537" blue="0.6417803764343262" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ListView fx:id="components" layoutX="198.0" layoutY="282.0" prefHeight="146.0" prefWidth="128.0" />
+      <TextField fx:id="name" layoutX="184.0" layoutY="129.0" onKeyPressed="#keyPressed" prefHeight="37.0" prefWidth="149.0" />
+      <Label layoutX="93.0" layoutY="180.0" text="TYPE:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.35087719559669495" green="0.08555339276790619" blue="0.26685798168182373" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5438596606254578" green="0.01175005454570055" blue="0.4108322560787201" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="type" layoutX="184.0" layoutY="176.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(to right, #eabcdc, #eacae7, #ebd7f0, #efe4f6, #f4f0fb, #f6f3fb, #f8f6fb, #faf9fb, #f7f5f8, #f4f0f5, #f1ecf1, #efe7ed);">
+                  <items>
+                  <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Starter" />
+                  <String fx:value="Main" />
+                  <String fx:value="Dessert" />
+             
+                   </FXCollections>
+                 </items>
+      </ChoiceBox>
+      <TextField fx:id="timeToMake" layoutX="184.0" layoutY="218.0" onKeyPressed="#keyPressed" prefHeight="37.0" prefWidth="149.0" />
+      <Label layoutX="93.0" layoutY="139.0" text="Name:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5087719559669495" green="0.14132553339004517" blue="0.3924139142036438" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3947368562221527" green="0.015838205814361572" blue="0.27475228905677795" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="220.0" text="Time To Make:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45614033937454224" green="0.0957331582903862" blue="0.342011421918869" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.48245614767074585" green="0.01786874607205391" blue="0.3663092851638794" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="48.0" fitWidth="56.0" layoutX="198.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/salad.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameError" layoutX="358.0" layoutY="134.0" prefHeight="27.0" prefWidth="295.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeError" layoutX="358.0" layoutY="223.0" prefHeight="27.0" prefWidth="295.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="47.0" fitWidth="150.0" layoutX="34.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/5.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

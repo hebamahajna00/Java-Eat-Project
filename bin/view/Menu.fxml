@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f4f1fd, #ebe2f9, #e4d3f5, #daafe6, #d789cf, #d65daf, #d31989) linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f4f1fd, #ebe2f9, #e4d3f5, #daafe6, #d789cf, #d65daf, #d31989);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
+   <children>
+      <Label layoutX="324.0" layoutY="28.0" prefHeight="68.0" prefWidth="249.0" text="Menu">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6666666865348816" green="0.12757201492786407" blue="0.35219478607177734" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.37719297409057617" green="0.0058208792470395565" blue="0.18531739711761475" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TableView id="table1" fx:id="tablee" layoutX="58.0" layoutY="132.0" prefHeight="356.0" prefWidth="697.0" stylesheets="@../application/myCss.css">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="83.33332061767578" text="name" />
+            <TableColumn fx:id="type" prefWidth="115.33332824707031" text="Type" />
+            <TableColumn fx:id="components" prefWidth="200.66668701171875" text="components" />
+            <TableColumn fx:id="price" prefWidth="130.6666259765625" text="price" />
+            <TableColumn fx:id="time" prefWidth="164.66668701171875" text="time to make" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

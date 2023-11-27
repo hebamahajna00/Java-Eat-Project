@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f3f1fd, #e9e2fa, #dfd3f6, #cdb1eb, #bf8edd, #b468cc, #ac3bb6);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddComponentsController">
+   <children>
+      <TextField fx:id="componentName" layoutX="228.0" layoutY="138.0" onKeyPressed="#keyPressed" prefHeight="37.0" prefWidth="149.0" />
+      <TextField fx:id="componentPrice" layoutX="228.0" layoutY="181.0" onKeyPressed="#keyPressed" prefHeight="37.0" prefWidth="149.0" />
+      <Label layoutX="95.0" layoutY="227.0" text="Has Gluten?">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.019005848094820976" blue="0.26907894015312195" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.37719297409057617" green="0.010477582924067974" blue="0.22439490258693695" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="256.0" text="Has Lactose?">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.01461988314986229" blue="0.23650097846984863" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.13333334028720856" green="0.003921568859368563" blue="0.09803921729326248" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="yesgluten" layoutX="206.0" layoutY="227.0" mnemonicParsing="false" onAction="#checkers" text="Yes">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.48245614767074585" green="0.050628114491701126" blue="0.4680618643760681" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4035087823867798" green="0.013699372299015522" blue="0.22809454798698425" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="nogluten" layoutX="261.0" layoutY="227.0" mnemonicParsing="false" onAction="#checkers" selected="true" text="No">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.42105263471603394" green="0.010396361351013184" blue="0.23625731468200684" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.48235294222831726" green="0.05098039284348488" blue="0.46666666865348816" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="yeslactose" layoutX="206.0" layoutY="256.0" mnemonicParsing="false" onAction="#checkers" text="Yes">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.48245614767074585" green="0.013401559554040432" blue="0.46682098507881165" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.42105263471603394" green="0.010396361351013184" blue="0.23625731468200684" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="nolactose" layoutX="261.0" layoutY="256.0" mnemonicParsing="false" onAction="#checkers" selected="true" text="No">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4649122953414917" green="0.03587286174297333" blue="0.4506109654903412" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.45614033937454224" green="0.009854883886873722" blue="0.25531187653541565" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="addComponent" layoutX="91.0" layoutY="293.0" mnemonicParsing="false" onAction="#add" prefHeight="37.0" prefWidth="287.0" stylesheets="@../application/myCss.css" text="ADD">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.780701756477356" green="0.42167532444000244" blue="0.7627504467964172" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.6000000238418579" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="96.0" layoutY="147.0" text="Component Name:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45614033937454224" green="0.009854883886873722" blue="0.2701880633831024" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3245614171028137" green="0.002003465546295047" blue="0.21166612207889557" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="190.0" text="Component Price:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.429824560880661" green="0.014592809602618217" blue="0.25681132078170776" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3245614171028137" green="0.002003465546295047" blue="0.21166612207889557" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="61.0" layoutX="242.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/1486-food-as-resources-outline.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameError" layoutX="396.0" layoutY="138.0" prefHeight="37.0" prefWidth="369.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceError" layoutX="396.0" layoutY="181.0" prefHeight="37.0" prefWidth="271.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="52.0" fitWidth="200.0" layoutX="35.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/2%20(1).gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

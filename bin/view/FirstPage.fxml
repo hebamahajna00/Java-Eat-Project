@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="1109.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FirstPageControlle">
+   <children>
+      <AnchorPane id="pane3" fx:id="anchoor" prefHeight="592.0" prefWidth="1109.0" style="-fx-background-color: linear-gradient(to right bottom, #f6e7f0, #f3e2ed, #f1dde9, #eed9e6, #ecd4e2, #e9d1e0, #e5cfde, #e2ccdc, #ddcada, #d9c9d8, #d4c7d6, #d0c5d3);;" stylesheets="@../application/myCss.css">
+         <children>
+            <AnchorPane id="pane5" layoutX="284.0" layoutY="70.0" prefHeight="341.0" prefWidth="566.0" style="-fx-background-color: white; -fx-background-radius: 1em;">
+               <children>
+                  <Label layoutX="111.0" layoutY="14.0" prefHeight="74.0" prefWidth="371.0" text="Welcome To JavaEat application">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.5701754093170166" green="0.026397010311484337" blue="0.41610488295555115" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.41228070855140686" green="0.019087068736553192" blue="0.24189679324626923" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="buttonn" layoutX="97.0" layoutY="262.0" mnemonicParsing="false" onAction="#start" prefHeight="62.0" prefWidth="371.0" text="let's start">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.5175438523292542" green="0.03194715082645416" blue="0.3556782901287079" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.42105263471603394" green="0.01949317753314972" blue="0.32735541462898254" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="222.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/MyLogo.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="394.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/1486-food-as-resources-outline.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="117.0" fitWidth="150.0" layoutX="65.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/salad.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

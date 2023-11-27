@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f3f1fd, #e9e2fa, #dfd3f6, #cdb1eb, #bf8edd, #b468cc, #ac3bb6);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ManagerCookAddController">
+   <children>
+      <TextField fx:id="cookfirst" layoutX="193.0" layoutY="91.0" onKeyPressed="#keyPressed" prefHeight="37.0" prefWidth="149.0" />
+      <TextField fx:id="cooklast" layoutX="193.0" layoutY="139.0" onKeyPressed="#keyPressed" prefHeight="37.0" prefWidth="149.0" />
+      <DatePicker fx:id="birth" layoutX="193.0" layoutY="195.0" prefHeight="37.0" prefWidth="175.0" />
+      <Label layoutX="111.0" layoutY="249.0" text="Gender:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4385964870452881" green="0.027073858305811882" blue="0.28770485520362854" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5263158082962036" green="0.0324886292219162" blue="0.3452458381652832" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="293.0" text="Expertise:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.48245614767074585" green="0.031270306557416916" blue="0.31702134013175964" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.429824560880661" green="0.025205761194229126" blue="0.2814643383026123" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="340.0" text="Is Chef?">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4912280738353729" green="0.01819363236427307" blue="0.31778210401535034" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.44736841320991516" green="0.03728070110082626" blue="0.297002911567688" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="gender" layoutX="193.0" layoutY="246.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(to right, #eabcdc, #eacae7, #ebd7f0, #efe4f6, #f4f0fb, #f6f3fb, #f8f6fb, #faf9fb, #f7f5f8, #f4f0f5, #f1ecf1, #efe7ed);">
+            <items>
+                  <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Female" />
+                  <String fx:value="Male" />
+                  <String fx:value="Unknown" />
+                   </FXCollections>
+                 </items>
+      </ChoiceBox>
+      <ChoiceBox fx:id="expertise" layoutX="193.0" layoutY="290.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(to right, #eabcdc, #eacae7, #ebd7f0, #efe4f6, #f4f0fb, #f6f3fb, #f8f6fb, #faf9fb, #f7f5f8, #f4f0f5, #f1ecf1, #efe7ed);">
+              <items>
+                  <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Italien" />
+                  <String fx:value="Mediterranean" />
+                  <String fx:value="American" />
+                  <String fx:value="French" />
+                  <String fx:value="Indian" />
+                  <String fx:value="Asian" />
+                   </FXCollections>
+                 </items>
+      </ChoiceBox>
+      <CheckBox fx:id="yeschef" layoutX="193.0" layoutY="341.0" mnemonicParsing="false" onAction="#checkers" text="YES">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4035087823867798" green="0.016190167516469955" blue="0.26149195432662964" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5263158082962036" green="0.02761533483862877" blue="0.34345895051956177" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="nochef" layoutX="291.0" layoutY="341.0" mnemonicParsing="false" onAction="#checkers" selected="true" text="NO">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3245614171028137" green="0.011019060388207436" blue="0.20959587395191193" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.37719297409057617" green="0.011641758494079113" blue="0.2431575357913971" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="add" layoutX="105.0" layoutY="379.0" mnemonicParsing="false" onAction="#add" prefHeight="37.0" prefWidth="244.0" stylesheets="@../application/myCss.css" text="ADD">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.780701756477356" green="0.42167532444000244" blue="0.7627504467964172" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.6000000238418579" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="110.0" layoutY="100.0" text="First Name:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.42105263471603394" green="0.015594542026519775" blue="0.2723846733570099" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.41228070855140686" green="0.01145224180072546" blue="0.2920321524143219" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="148.0" text="Last Name:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45614033937454224" green="0.02393328957259655" blue="0.29766443371772766" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3947368562221527" green="0.06335282325744629" blue="0.29532164335250854" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="195.0" text="Birth Date:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5" green="0.03086419776082039" blue="0.3279835283756256" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.359649121761322" green="0.03441087156534195" blue="0.262077659368515" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="47.0" fitWidth="59.0" layoutX="191.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/17-avatar-man-nodding-outline.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="lastError" layoutX="368.0" layoutY="139.0" prefHeight="37.0" prefWidth="217.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameError" layoutX="368.0" layoutY="91.0" prefHeight="37.0" prefWidth="217.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="37.0" fitWidth="193.0" layoutX="29.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/7.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to right, #ffffff, #f1ecfb, #e6d9f4, #dec5ec, #d9b0e1, #daaadd, #dba5d9, #dc9fd4, #e1a8d8, #e5b1dc, #eabae0, #eec3e4);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AllDishesControllers">
+   <children>
+      <Label layoutX="21.0" layoutY="10.0" prefHeight="68.0" prefWidth="249.0" text="all Dishes:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6666666865348816" green="0.12757201492786407" blue="0.35219478607177734" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.4833333194255829" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="58.0" layoutY="102.0" text="id:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6666666865348816" green="0.12757201492786407" blue="0.35219478607177734" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.4833333194255829" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idsearch" layoutX="94.0" layoutY="99.0" onKeyPressed="#keyPressed" />
+      <Button fx:id="search" layoutX="270.0" layoutY="98.0" mnemonicParsing="false" onAction="#search1" style="-fx-background-color: rgb(234,188,220);" text="Search">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5263158082962036" green="0.11533463001251221" blue="0.32767489552497864" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9122806787490845" blue="0.3801169693470001" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorid" layoutX="94.0" layoutY="129.0" prefHeight="17.0" prefWidth="149.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablee" layoutX="58.0" layoutY="157.0" prefHeight="331.0" prefWidth="697.0" stylesheets="@../application/myCss.css">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="86.6666841506958" text="ID" />
+            <TableColumn fx:id="name" prefWidth="83.33332061767578" text="name" />
+            <TableColumn fx:id="type" prefWidth="115.33332824707031" text="Type" />
+            <TableColumn fx:id="components" prefWidth="141.33334350585938" text="components" />
+            <TableColumn fx:id="price" prefWidth="116.00003051757812" text="price" />
+            <TableColumn fx:id="time" prefWidth="150.0" text="time to make" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

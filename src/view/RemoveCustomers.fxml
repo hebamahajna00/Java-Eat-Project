@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="pane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" stylesheets="@../application/myCss.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RemoveCustomersController">
+   <children>
+      <Label layoutX="28.0" layoutY="23.0" text="Remove Customer">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6578947305679321" green="0.012183235958218575" blue="0.29199156165122986" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3333333432674408" green="0.004115226212888956" blue="0.24554184079170227" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="142.0" text="Choose Customer To Remove:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6578947305679321" green="0.012183235958218575" blue="0.29199156165122986" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3333333432674408" green="0.004115226212888956" blue="0.24554184079170227" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="compo" layoutX="282.0" layoutY="138.0" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(to right top, #efd7ef, #eebdf1, #eba2f3, #e686f6, #df68f9);;" />
+      <Button id="button7" fx:id="remove" layoutX="99.0" layoutY="224.0" mnemonicParsing="false" onAction="#remoove" prefHeight="35.0" prefWidth="183.0" text="Remove">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6578947305679321" green="0.012183235958218575" blue="0.29199156165122986" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3333333432674408" green="0.004115226212888956" blue="0.24554184079170227" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

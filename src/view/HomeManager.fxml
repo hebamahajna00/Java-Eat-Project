@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <MediaView fx:id="mv" fitHeight="369.0" fitWidth="860.0" />
+      <ImageView fitHeight="33.0" fitWidth="347.0" layoutX="217.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/10%20(6).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="347.0" layoutX="133.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/10%20(7).gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="133.0" layoutX="579.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/7ImI.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

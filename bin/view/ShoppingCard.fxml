@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f4f1fd, #ebe2f9, #e4d3f5, #daafe6, #d789cf, #d65daf, #d31989);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ShoppingCardController">
+   <children>
+      <Label layoutX="304.0" layoutY="33.0" prefHeight="68.0" prefWidth="249.0" text="Shopping Cart">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.359649121761322" green="0.014430366456508636" blue="0.15827152132987976" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.45614033937454224" green="0.011262725107371807" blue="0.22628691792488098" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="errorid" layoutX="94.0" layoutY="129.0" prefHeight="17.0" prefWidth="149.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button id="button1" layoutX="591.0" layoutY="425.0" mnemonicParsing="false" onAction="#orderr" prefHeight="45.0" prefWidth="210.0" stylesheets="@../application/myCss.css" text="finished">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.2982456088066101" green="0.004602555651217699" blue="0.2884575128555298" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2719298303127289" green="0.008392895571887493" blue="0.17090733349323273" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <TableView id="table1" fx:id="tablee" layoutX="30.0" layoutY="87.0" prefHeight="300.0" prefWidth="697.0" stylesheets="@../application/myCss.css">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="86.6666841506958" text="ID" />
+            <TableColumn fx:id="name" prefWidth="83.33332061767578" text="name" />
+            <TableColumn fx:id="type" prefWidth="115.33332824707031" text="Type" />
+            <TableColumn fx:id="components" prefWidth="141.33334350585938" text="components" />
+            <TableColumn fx:id="price" prefWidth="116.00003051757812" text="price" />
+            <TableColumn fx:id="time" prefWidth="150.0" text="time to make" />
+         </columns>
+      </TableView>
+      <Label fx:id="ppp" layoutX="30.0" layoutY="400.0" prefHeight="38.0" prefWidth="127.0" text="price:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45614033937454224" green="0.011262725107371807" blue="0.307847797870636" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

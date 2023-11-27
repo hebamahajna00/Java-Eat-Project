@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f3f1fd, #e9e2fa, #dfd3f6, #cdb1eb, #bf8edd, #b468cc, #ac3bb6);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ManagerAddOrderController">
+   <children>
+      <Button fx:id="addordeer" layoutX="98.0" layoutY="360.0" mnemonicParsing="false" onAction="#add" prefHeight="35.0" prefWidth="235.0" stylesheets="@../application/myCss.css" text="ADD">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.780701756477356" green="0.42167532444000244" blue="0.7627504467964172" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.6000000238418579" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="98.0" layoutY="129.0" text="Customer:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5" green="0.06481481343507767" blue="0.3404321074485779" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.359649121761322" green="0.02997075952589512" blue="0.2607456147670746" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="175.0" text="Dishes:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4649122953414917" green="0.02439354546368122" blue="0.3033887445926666" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4649122953414917" green="0.025828460231423378" blue="0.303914874792099" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ListView fx:id="ordDishes" layoutX="180.0" layoutY="175.0" prefHeight="167.0" prefWidth="150.0" />
+      <ComboBox fx:id="ordCustomer" layoutX="181.0" layoutY="126.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(to right, #eabcdc, #eacae7, #ebd7f0, #efe4f6, #f4f0fb, #f6f3fb, #f8f6fb, #faf9fb, #f7f5f8, #f4f0f5, #f1ecf1, #efe7ed);" />
+      <ImageView fitHeight="39.0" fitWidth="52.0" layoutX="205.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/order-completed.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="150.0" layoutX="39.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/1.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

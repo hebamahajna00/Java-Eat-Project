@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to bottom, #ffffff, #fbfafd, #f7f5fb, #f4eff8, #f1eaf5, #e6d7ec, #ddc5e2, #d4b2d8, #c18ec5, #ae69b1, #9b439d, #880988);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UpdateComponentController">
+   <children>
+      <TextField fx:id="componentName" layoutX="228.0" layoutY="235.0" onKeyPressed="#keyPressed" prefHeight="37.0" prefWidth="149.0" />
+      <TextField fx:id="componentPrice" layoutX="228.0" layoutY="279.0" onKeyPressed="#keyPressed" prefHeight="37.0" prefWidth="149.0" />
+      <Label layoutX="84.0" layoutY="330.0" text="Has Gluten?">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.019005848094820976" blue="0.26907894015312195" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.37719297409057617" green="0.010477582924067974" blue="0.22439490258693695" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="359.0" text="Has Lactose?">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.01461988314986229" blue="0.23650097846984863" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.13333334028720856" green="0.003921568859368563" blue="0.09803921729326248" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="yesgluten" layoutX="203.0" layoutY="330.0" mnemonicParsing="false" onAction="#checkers" text="Yes">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.48245614767074585" green="0.050628114491701126" blue="0.4680618643760681" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4035087823867798" green="0.013699372299015522" blue="0.22809454798698425" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="nogluten" layoutX="261.0" layoutY="330.0" mnemonicParsing="false" onAction="#checkers" selected="true" text="No">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.42105263471603394" green="0.010396361351013184" blue="0.23625731468200684" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.48235294222831726" green="0.05098039284348488" blue="0.46666666865348816" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="yeslactose" layoutX="203.0" layoutY="359.0" mnemonicParsing="false" onAction="#checkers" text="Yes">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.48245614767074585" green="0.013401559554040432" blue="0.46682098507881165" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.42105263471603394" green="0.010396361351013184" blue="0.23625731468200684" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="nolactose" layoutX="261.0" layoutY="359.0" mnemonicParsing="false" onAction="#checkers" selected="true" text="No">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4649122953414917" green="0.03587286174297333" blue="0.4506109654903412" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.45614033937454224" green="0.009854883886873722" blue="0.25531187653541565" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="update" layoutX="84.0" layoutY="409.0" mnemonicParsing="false" onAction="#updatee" prefHeight="37.0" prefWidth="287.0" stylesheets="@../application/myCss.css" text="UPDATE">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.780701756477356" green="0.42167532444000244" blue="0.7627504467964172" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.6000000238418579" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="86.0" layoutY="254.0" text="Component Name:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45614033937454224" green="0.009854883886873722" blue="0.2701880633831024" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3245614171028137" green="0.002003465546295047" blue="0.21166612207889557" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="288.0" text="Component Price:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.429824560880661" green="0.014592809602618217" blue="0.25681132078170776" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3245614171028137" green="0.002003465546295047" blue="0.21166612207889557" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameError" layoutX="396.0" layoutY="235.0" prefHeight="37.0" prefWidth="369.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceError" layoutX="396.0" layoutY="279.0" prefHeight="37.0" prefWidth="271.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="34.0" text="Update Component">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9385964870452881" green="0.017381416633725166" blue="0.6008176207542419" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4385964870452881" green="0.020305393263697624" blue="0.38979586958885193" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="49.0" layoutY="106.0" prefHeight="81.0" prefWidth="600.0" style="-fx-border-color: purple; -fx-border-radius: 2em;">
+         <children>
+            <Label layoutX="14.0" layoutY="27.0" text="Choose Component To update:" textFill="#65035b">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="compoo" layoutX="284.0" layoutY="23.0" onAction="#showInformation" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #B064B0;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

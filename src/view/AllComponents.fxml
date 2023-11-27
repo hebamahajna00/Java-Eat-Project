@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to right, #ffffff, #f1ecfb, #e6d9f4, #dec5ec, #d9b0e1, #daaadd, #dba5d9, #dc9fd4, #e1a8d8, #e5b1dc, #eabae0, #eec3e4);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AllComponentsController">
+   <children>
+      <TableView fx:id="tablee" layoutX="59.0" layoutY="167.0" prefHeight="317.0" prefWidth="703.0" stylesheets="@../application/myCss.css">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="131.99999618530273" text="ID" />
+          <TableColumn fx:id="name" prefWidth="118.66670227050781" text="Name" />
+            <TableColumn fx:id="lac" prefWidth="141.33334350585938" text="hasLactose" />
+            <TableColumn fx:id="glu" prefWidth="151.99996948242188" text="hasGluten" />
+            <TableColumn fx:id="price" prefWidth="162.6666259765625" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="59.0" layoutY="27.0" prefHeight="98.0" prefWidth="249.0" text="All Components:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6666666865348816" green="0.12757201492786407" blue="0.35219478607177734" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.4833333194255829" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="59.0" layoutY="116.0" text="id:">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6666666865348816" green="0.12757201492786407" blue="0.35219478607177734" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.4833333194255829" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idsearch" layoutX="94.0" layoutY="112.0" onKeyPressed="#keyPressed" />
+      <Button fx:id="search" layoutX="271.0" layoutY="112.0" mnemonicParsing="false" onAction="#search1" style="-fx-background-color: rgb(234,188,220);" text="Search">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5263158082962036" green="0.11533463001251221" blue="0.32767489552497864" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9122806787490845" blue="0.3801169693470001" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorid" layoutX="94.0" layoutY="139.0" prefHeight="17.0" prefWidth="149.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
+

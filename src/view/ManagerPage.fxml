@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchoor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="1109.0" style="-fx-background-color: linear-gradient(to right, #9b45a1, #a76cb9, #b68fcd, #c7b1df, #dcd3ee, #e7e2f4, #f2f0fa, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ManagerController">
+   <children>
+      <BorderPane fx:id="myborder" layoutX="244.0" layoutY="135.0" prefHeight="592.0" prefWidth="1109.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f3f1fd, #e9e2fa, #dfd3f6, #cdb1eb, #bf8edd, #b468cc, #ac3bb6);" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="95.0" layoutY="14.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to right, #9b45a1, #a76cb9, #b68fcd, #c7b1df, #dcd3ee, #e7e2f4, #f2f0fa, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff)linear-gradient(to right, #9b45a1, #a76cb9, #b68fcd, #c7b1df, #dcd3ee, #e7e2f4, #f2f0fa, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <MenuBar layoutX="-1.0" layoutY="25.0" prefHeight="48.0" prefWidth="1109.0" stylesheets="@../application/myCss.css">
+                    <menus>
+                     
+                        <Menu mnemonicParsing="false" text="back">
+                        <items>
+                              <MenuItem mnemonicParsing="false" onAction="#goHome" text="Home" />
+                              <MenuItem mnemonicParsing="false" onAction="#exiiit" text="Exit" />
+                           
+          
+                           </items>
+          
+                        </Menu>
+                        
+                        <Menu mnemonicParsing="false" text="Components">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#goAddCompo" text="Add" />
+                              <MenuItem mnemonicParsing="false" onAction="#goUpdateCompo" text="Update" />
+                              <MenuItem mnemonicParsing="false" onAction="#removeCompo" text="Remove" />
+                              <MenuItem mnemonicParsing="false" onAction="#goAllComponents" text="ALL" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Deliveries">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#goAddDelivery" text="Add" />
+                              <MenuItem mnemonicParsing="false" onAction="#goUpdateDelivery" text="Update" />
+                              <MenuItem mnemonicParsing="false" onAction="#goRemoveDeli" text="Remove" />
+                              <MenuItem mnemonicParsing="false" onAction="#goAllDeli" text="All" />
+                              
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Dishes">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#goAddDish" text="Add" />
+                              <MenuItem mnemonicParsing="false" onAction="#goUpdateDish" text="Update" />
+                              <MenuItem mnemonicParsing="false" onAction="#goRemoveDish" text="Remove" />
+                              <MenuItem mnemonicParsing="false" onAction="#goAllDishes" text="ALL" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Orders">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#goAddOrder" text="Add" />
+                              <MenuItem mnemonicParsing="false" onAction="#goUpdateOrder" text="Update" />
+                              <MenuItem mnemonicParsing="false" onAction="#goRemoveOrder" text="Remove" />
+                              <MenuItem mnemonicParsing="false" onAction="#goAllOrders" text="ALL" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Customers">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#goAddCust" text="Add" />
+                              <MenuItem mnemonicParsing="false" onAction="#goUpdateCustomer" text="Update" />
+                              <MenuItem mnemonicParsing="false" onAction="#goRemoveCustomer" text="Remove" />
+                              <MenuItem mnemonicParsing="false" onAction="#goAllCustomers" text="All" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="DeliveryAreas">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#goAddArea" text="Add" />
+                              <MenuItem mnemonicParsing="false" onAction="#goUpdateArea" text="Update" />
+                              <MenuItem mnemonicParsing="false" onAction="#goRemoveArea" text="Remove" />
+                              <MenuItem mnemonicParsing="false" onAction="#goAllAreas" text="All" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Cooks">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#goAddCook" text="Add" />
+                              <MenuItem mnemonicParsing="false" onAction="#goUpdateCook" text="Update" />
+                              <MenuItem mnemonicParsing="false" onAction="#goRemoveCook" text="Remove" />
+                              <MenuItem mnemonicParsing="false" onAction="#goAllCooks" text="All" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="DeliveryPersons">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#goDeliPerson" text="Add" />
+                              <MenuItem mnemonicParsing="false" onAction="#goUpdateDeliPerson" text="Update" />
+                              <MenuItem mnemonicParsing="false" onAction="#goRemoveDeliPerson" text="Remove" />
+                              <MenuItem mnemonicParsing="false" onAction="#goAllDelPersons" text="All" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="blacklist">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#goAddblack" text="add" />
+                              <MenuItem mnemonicParsing="false" onAction="#goRemoveblack" text="remove" />
+                          </items>
+                        </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="519.0" prefWidth="268.0" style="-fx-background-color: linear-gradient(to right, #ac3bb6, #b554be, #bd69c5, #c67ecd, #ce92d4, #d3a2dc, #d8b2e3, #dec2e9, #e3d2f1, #eae1f7, #f4f0fb, #ffffff);" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="76.0" layoutY="48.0" prefHeight="465.0" prefWidth="280.0" style="-fx-background-color: linear-gradient(to right top, #d16ba5, #be56a1, #a8439e, #8f319d, #71239c, #6f21a3, #6d1faa, #691eb2, #8b22c1, #ac26cf, #ce2adc, #f02fe8);" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="48.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#goCookByExp" prefHeight="42.909" prefWidth="281.0" stylesheets="@../application/myCss.css" text="Cooks By Expertise">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/experience%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.24705882370471954" green="0.03921568766236305" blue="0.16078431904315948" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.2982456088066101" green="0.007364089135080576" blue="0.1818930059671402" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#goDeliBy" prefHeight="42.909" prefWidth="280.0" stylesheets="@../application/myCss.css" text="Deliveries By Person">
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/delivery-man.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.24705882370471954" green="0.03921568766236305" blue="0.16078431904315948" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.32549020648002625" green="0.0117647061124444" blue="0.20000000298023224" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#goNumber" prefHeight="42.909" prefWidth="283.0" stylesheets="@../application/myCss.css" text=" Number Of Deliveries Per Type">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.24705882370471954" green="0.03921568766236305" blue="0.16078431904315948" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.32549020648002625" green="0.0117647061124444" blue="0.20000000298023224" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/one.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#reve" prefHeight="42.909" prefWidth="280.0" stylesheets="@../application/myCss.css" text="Express Delivery Revenue">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/revenue.png" />
+                                 </image></ImageView>
+                           </graphic>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.24705882370471954" green="0.03921568766236305" blue="0.16078431904315948" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.32549020648002625" green="0.0117647061124444" blue="0.20000000298023224" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#goPopular" prefHeight="42.909" prefWidth="280.0" stylesheets="@../application/myCss.css" text="Popular Components">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/top-three.png" />
+                                 </image></ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.24705882370471954" green="0.03921568766236305" blue="0.16078431904315948" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.32549020648002625" green="0.0117647061124444" blue="0.20000000298023224" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#goProfit" prefHeight="42.909" prefWidth="280.0" stylesheets="@../application/myCss.css" text="Profit Relation">
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/profits.png" />
+                                 </image></ImageView>
+                           </graphic>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.24705882370471954" green="0.03921568766236305" blue="0.16078431904315948" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.32549020648002625" green="0.0117647061124444" blue="0.20000000298023224" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#goAi" prefHeight="42.909" prefWidth="280.0" stylesheets="@../application/myCss.css" text="Use AI machine">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/artificial-intelligence%20(1).png" />
+                                 </image></ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.24705882370471954" green="0.03921568766236305" blue="0.16078431904315948" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.32549020648002625" green="0.0117647061124444" blue="0.20000000298023224" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#goOrderBy" prefHeight="42.909" prefWidth="280.0" stylesheets="@../application/myCss.css" text="Orders By Customer">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/customer%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.24705882370471954" green="0.03921568766236305" blue="0.16078431904315948" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.32549020648002625" green="0.0117647061124444" blue="0.20000000298023224" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#goBlackList" prefHeight="42.909" prefWidth="280.0" stylesheets="@../application/myCss.css" text="blackList">
+                           <graphic>
+                              <ImageView fitHeight="28.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/list.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.24705882370471954" green="0.03921568766236305" blue="0.16078431904315948" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.32549020648002625" green="0.0117647061124444" blue="0.20000000298023224" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#goToReleventDishList" prefHeight="42.909" prefWidth="280.0" stylesheets="@../application/myCss.css" text="Relevent Dish List">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/list.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.24705882370471954" green="0.03921568766236305" blue="0.16078431904315948" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.32549020648002625" green="0.0117647061124444" blue="0.20000000298023224" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#goDeliver" prefHeight="49.0" prefWidth="280.0" stylesheets="@../application/myCss.css" text="Deliver-orders by delivery">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/order%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.24705882370471954" green="0.03921568766236305" blue="0.16078431904315948" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.32549020648002625" green="0.0117647061124444" blue="0.20000000298023224" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Label layoutX="1.0" prefHeight="48.0" prefWidth="277.0" style="-fx-background-color: linear-gradient(to right, #9b45a1, #a76cb9, #b68fcd, #c7b1df, #dcd3ee, #e7e2f4, #f2f0fa, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);" text="                 JavaEat Manager">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="1.0" green="0.40784314274787903" blue="0.7450980544090271" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="235.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8-line-chart.gif" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="logg" layoutX="-4.0" layoutY="-5.0" mnemonicParsing="false" onAction="#goToLogIn" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: white;" text="logIn page">
+                     <font>
+                        <Font name="System Bold Italic" size="10.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.5175438523292542" green="0.009584145620465279" blue="0.32282596826553345" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.2017543911933899" blue="0.17149123549461365" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <MediaView fx:id="mv" fitHeight="369.0" fitWidth="860.0" />
+                  <ImageView fitHeight="33.0" fitWidth="347.0" layoutX="217.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/10%20(6).gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="347.0" layoutX="133.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/10%20(7).gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="87.0" fitWidth="133.0" layoutX="579.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/7ImI.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f4f1fd, #ebe2f9, #e4d3f5, #daafe6, #d789cf, #d65daf, #d31989);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DeliverController">
+   <children>
+      <Label layoutX="69.0" layoutY="126.0" prefHeight="60.0" prefWidth="222.0" text="please choose a Delivery:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6754385828971863" green="0.014592809602618217" blue="0.4881989657878876" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3843137323856354" green="0.01568627543747425" blue="0.27450981736183167" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ComboBox fx:id="cust" layoutX="306.0" layoutY="143.0" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: linear-gradient(to left bottom, #ff0093, #fe48a3, #fc69b3, #f983c0, #f69bcc, #f3acd8, #f1bce2, #efcbe9, #efd9f2, #f2e6f8, #f7f3fd, #ffffff);" />
+      <TableView id="table1" fx:id="tablee" layoutX="72.0" layoutY="198.0" prefHeight="307.0" prefWidth="617.0" stylesheets="@../application/myCss.css">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="101.33333587646484" text="ID" />
+            <TableColumn fx:id="customer" prefWidth="139.99998474121094" text="Customer" />
+            <TableColumn fx:id="dishes" prefWidth="191.33331298828125" text="Dishes" />
+            <TableColumn fx:id="delivery" prefWidth="183.33328247070312" text="Delivery" />
+         </columns>
+      </TableView>
+      <Button id="button1" fx:id="show" layoutX="503.0" layoutY="143.0" mnemonicParsing="false" onAction="#show1" prefHeight="35.0" prefWidth="101.0" stylesheets="@../application/myCss.css" text="Show" textFill="#77035f">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="60.0" fitWidth="94.0" layoutX="512.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/customer-insight.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="270.0" layoutY="21.0" prefHeight="60.0" prefWidth="222.0" text="Orders By Delivery">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6754385828971863" green="0.014592809602618217" blue="0.4881989657878876" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3843137323856354" green="0.01568627543747425" blue="0.27450981736183167" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

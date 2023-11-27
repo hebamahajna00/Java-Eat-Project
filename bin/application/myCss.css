@@ -1,0 +1,283 @@
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size : 20;
+    -fx-background-color:rgb(234,188,220);
+}
+.table-view .column-header .label{
+
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+    -fx-background-color:rgb(234,188,220);
+    -fx-font-family:verdana;
+}
+ #button7{
+    -fx-border-color: #AA0087;
+    -fx-background-color:linear-gradient(to right top, #efd7ef, #eebdf1, #eba2f3, #e686f6, #df68f9);
+    
+}
+
+
+#button7:hover {
+    -fx-background-color: #FFF3FF;
+    -fx-border-color: #AA0087;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-scale-z: 1.2;
+    
+}
+ 
+
+#pane{
+    -fx-background-image: url("../Images/foood.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 525 501;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, #9F0A9D, 30, 0.5, 0, 0); 
+}
+#pane5{
+    
+    -fx-effect: dropshadow(three-pass-box, #9F0A9D, 30, 0.5, 0, 0); 
+}
+#pane3{
+    -fx-background-image: url("../Images/foodnumber2.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1109 592;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, #8B70B7, 30, 0.5, 0, 0); 
+}
+#pane9{
+    -fx-background-image: url("../Images/foood.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1109 592;
+    -fx-background-position: center center;
+     
+}
+#pane2{
+    -fx-background-image: url("../Images/foood.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 841 527;
+    -fx-background-position: center center;
+}
+
+.table-view .cell{
+    
+    -fx-border-color:transparent;
+     -fx-cell-size: 30;
+    -fx-alignment: center-left;
+     -fx-text-fill: #C01D8D;
+     -fx-font-family:verdana;
+    
+   
+}
+
+.table-row-cell:selected{
+    -fx-background-color: #EBC1DE;
+}
+
+
+
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:#C01D8D;
+    -fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color:derive(  #C01D8D,80%);
+    -fx-background-radius: 2em;
+    -fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #C01D8D,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+
+}
+
+
+
+
+/*another design */
+
+#table1.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size : 20;
+    -fx-background-color:#D65DAF;
+}
+#table1.table-view .column-header .label{
+
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+    -fx-background-color: #D65DAF;
+    -fx-font-family:verdana;
+}
+#table1.table-view .cell{
+    
+    -fx-border-color:transparent;
+     -fx-cell-size: 30;
+    -fx-alignment: center-left;
+     -fx-text-fill:#711653;
+     -fx-font-family:verdana;
+    
+   
+}
+
+#table1 .table-row-cell:selected{
+    -fx-background-color: #E37CC3;
+    }
+    
+
+
+
+
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+#table1.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:#D65DAF;
+    -fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+#table1.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color:#D65DAF;
+    -fx-background-radius: 2em;
+    -fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+#table1.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:#D65DAF;
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+
+}
+
+
+
+.button {
+    -fx-border-color: #AA0087;
+    -fx-background-color: linear-gradient(to right, #c55aca, #c87fdc, #ce9fea, #d7bdf4, #e5dafb, #ede7fd, #f5f3fe, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+    
+}
+
+.button:hover {
+    -fx-background-color: white;
+    -fx-border-color: #AA0087;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+
+#button1 {
+    -fx-border-color: #AA0087;
+    -fx-background-color: linear-gradient(to left bottom, #ff0093, #fe48a3, #fc69b3, #f983c0, #f69bcc, #f3acd8, #f1bce2, #efcbe9, #efd9f2, #f2e6f8, #f7f3fd, #ffffff);
+    
+}
+
+
+#button1:hover {
+    -fx-background-color: #F6E3EE;
+    -fx-border-color: #AA0087;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-scale-z: 1.2;
+    
+}
+
+#button2 {
+    -fx-border-color: #AA0087;
+    -fx-background-color:  linear-gradient(to right bottom, #f6e7f0, #f0cae0, #e9acce, #e28ebc, #da6ea9, #d864a7, #d55aa6, #d24fa5, #d45cb5, #d469c5, #d476d4, #d382e3);
+    
+}
+
+
+#button2:hover {
+    -fx-background-color: #F6E3EE;
+    -fx-border-color: #AA0087;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-scale-z: 1.2;
+    
+}
+
+
+.menu-bar {
+    -fx-background-color: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f3f1fd, #e9e2fa, #dfd3f6, #cdb1eb, #bf8edd, #b468cc, #ac3bb6);
+    -fx-opacity: 0.5;
+    -fx-border-width: 2.0;
+
+}
+.menu-bar .label {
+    -fx-font-size: 13.0 pt;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold; 
+    -fx-padding: 10.0px;
+
+}
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background: white ;
+    -fx-opacity: 0.5;
+    -fx-text-fill: white;
+}
+
+.menu-item {
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+    -fx-text-fill: #4A0045;
+    
+}
+.menu-item .label{
+    -fx-font-size: 14.0 pt;
+    -fx-text-fill:#85047C ;
+    -fx-font-family: "Bookman Old Style";
+    }
+    
+    
+    
+    #mm {
+    -fx-background-color:linear-gradient(to right bottom, #f6e7f0, #f0cae0, #e9acce, #e28ebc, #da6ea9, #d864a7, #d55aa6, #d24fa5, #d45cb5, #d469c5, #d476d4, #d382e3);
+    -fx-opacity: 0.5;
+    -fx-border-width: 2.0;
+
+}
+.menu-bar.label {
+    -fx-font-size: 13.0 pt;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold; 
+    -fx-padding: 10.0px;
+
+}
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background: white ;
+    -fx-opacity: 0.5;
+    -fx-text-fill: white;
+}
+
+.menu-item {
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+    -fx-text-fill: #4A0045;
+    
+}
+.menu-item .label{
+    -fx-font-size: 14.0 pt;
+    -fx-text-fill:#85047C ;
+    -fx-font-family: "Bookman Old Style";
+    }
+    

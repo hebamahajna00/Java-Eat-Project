@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="841.0" style="-fx-background-color: linear-gradient(to right, #ffffff, #f1ecfb, #e6d9f4, #dec5ec, #d9b0e1, #daaadd, #dba5d9, #dc9fd4, #e1a8d8, #e5b1dc, #eabae0, #eec3e4);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AllDeliveryController">
+   <children>
+      <TableView fx:id="tablee" layoutX="284.0" layoutY="35.0" prefHeight="224.0" prefWidth="534.0" stylesheets="@../application/myCss.css">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="51.33334541320801" text="ID" />
+            <TableColumn fx:id="person" prefWidth="110.0000228881836" text="delivery person" />
+            <TableColumn fx:id="area" prefWidth="99.33335876464844" text="delivery area" />
+            <TableColumn fx:id="delivered" prefWidth="90.0" text="is Delivered" />
+            <TableColumn fx:id="date" prefWidth="104.6666259765625" text="delivered date" />
+            <TableColumn fx:id="orders" minWidth="0.0" prefWidth="100.66659545898438" text=" Orders" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tablee1" layoutX="280.0" layoutY="289.0" prefHeight="224.0" prefWidth="541.0" stylesheets="@../application/myCss.css">
+         <columns>
+            <TableColumn fx:id="id1" prefWidth="34.66668701171875" text="ID" />
+            <TableColumn fx:id="person1" prefWidth="109.99996948242188" text="delivery person" />
+            <TableColumn fx:id="area1" prefWidth="93.99996948242188" text="delivery area" />
+            <TableColumn fx:id="delivered1" prefWidth="81.33331298828125" text="isDelivered" />
+            <TableColumn fx:id="date1" prefWidth="103.33331298828125" text="delivered date" />
+            <TableColumn fx:id="orders1" minWidth="0.0" prefWidth="55.33331298828125" text=" Order" />
+            <TableColumn fx:id="postage" prefWidth="62.0" text="postage" />
+         </columns>
+      </TableView>
+      <Label layoutX="421.0" layoutY="8.0" prefHeight="27.0" prefWidth="193.0" text="Regular Deliveries:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6666666865348816" green="0.12757201492786407" blue="0.35219478607177734" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.4833333194255829" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane layoutX="14.0" layoutY="196.0" prefHeight="131.0" prefWidth="257.0" style="-fx-background-color: linear-gradient(to right, #f4d4ec, #f4cfec, #f3caec, #f3c5ec, #f2c0ec, #f2c0ec, #f2c0ec, #f2c0ec, #f3c5ec, #f3caec, #f4cfec, #f4d4ec); -fx-background-radius: 5em;">
+         <children>
+            <Label layoutX="23.0" layoutY="43.0" text="id:">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6666666865348816" green="0.12757201492786407" blue="0.35219478607177734" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" blue="0.4833333194255829" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idsearch" layoutX="58.0" layoutY="40.0" onKeyPressed="#keyPressed" />
+            <Label fx:id="errorid" layoutX="58.0" layoutY="68.0" prefHeight="17.0" prefWidth="149.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="search" layoutX="58.0" layoutY="87.0" mnemonicParsing="false" onAction="#search1" prefHeight="27.0" prefWidth="149.0" style="-fx-background-color: rgb(234,188,220);" text="Search">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5263158082962036" green="0.11533463001251221" blue="0.32767489552497864" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9122806787490845" blue="0.3801169693470001" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="432.0" layoutY="264.0" prefHeight="19.0" prefWidth="193.0" text="Express Deliveries:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6666666865348816" green="0.12757201492786407" blue="0.35219478607177734" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.4833333194255829" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="8.0" layoutY="10.0" prefHeight="49.0" prefWidth="193.0" text="all  Deliveries:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6666666865348816" green="0.12757201492786407" blue="0.35219478607177734" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.4833333194255829" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
